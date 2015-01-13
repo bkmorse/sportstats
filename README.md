@@ -7,8 +7,8 @@ Require in composer.json:
 
 `Run composer update`
 
-```
 ####Example
+```
 require_once __DIR__ . '/vendor/autoload.php';
 $baseball = \bkmorse\sportstats\Factory::create('\bkmorse\sportstats\Baseball');
 print $baseball->ba(50, 100); // batting average
