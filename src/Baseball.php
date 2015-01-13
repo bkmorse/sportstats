@@ -19,9 +19,30 @@ class Baseball
      * @param int $at_bats
      * @return string
      */
-    public function battingAverage($hits, $at_bats)
+    public function ba($hits, $at_bats)
     {
-        return ltrim(number_format(($hits/$at_bats), 3), '0');
+        return ltrim(number_format(($hits/$ab), 3), '0');
     }
+
+    public function obp($ob, $pa)
+    {
+        return $ob / $pa;
+    }
+
+    public function era($runs, $innings)
+    {
+        return number_format(($runs * 9)/($innings), 2);
+    }
+
+    public function slg($bases, $at_bats)
+    {
+        return ltrim(number_format(($bases/$at_bats), 3), '0');
+    }
+
+    private function format_stat($stat)
+    {
+        return ltrim(number_format($stat, 3), '0');
+    }
+
    
 }
