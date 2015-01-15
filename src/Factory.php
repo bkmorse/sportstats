@@ -10,11 +10,11 @@ class Factory
 	 */
 	public static function create($class)
 	{
-	    if (class_exists($class))
-		{
-			return new $class;
-		} else {
-			throw new \Exception("Invalid class $class");
-		}
+	    if(!class_exists($class))
+	    {
+	    	throw new \Exception("Invalid class $class");
+	    }
+	    
+		return new $class;
 	}
 }
