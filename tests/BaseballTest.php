@@ -6,10 +6,10 @@ class BaseballTest extends \PHPUnit_Framework_TestCase {
 
 	private $baseball;
 
-    public function __construct()
-    {
-        $this->baseball = new Baseball();
-    }
+    	public function __construct()
+    	{
+        	$this->baseball = new Baseball();
+    	}
 
 	public function testBattingAverage()
 	{
@@ -36,8 +36,8 @@ class BaseballTest extends \PHPUnit_Framework_TestCase {
 	}
 
 	public function testformatStat()
-    {
+    	{
 		$result = $this->baseball->formatStat(.833333);
 		$this->assertEquals(.833, $result);
-    }
+    	}
 }
