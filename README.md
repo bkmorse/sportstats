@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/bkmorse/sportstats.svg?branch=master)](https://travis-ci.org/bkmorse/sportstats/)
+
 #Sport Stats
 Stat calculations for various sports
 ####Install
